@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Tipo de fuentes -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="pagar.css">
+    <title>Página de Pago</title>
+</head>
+
+<body>
+    <!-- header -->
+    <h1 class="text-center head m-4">Página de Pago</h1>
+    <!-- header -->
+    <!-- Iconos de la Página de Pagos -->
+    <div class="icons">
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-dollar-sign bg p-4 mr-4"></i>Contra Reembolso</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-arrows-alt-h bg p-4 mr-4"></i>Devoluciones</h2>
+            </div>
+        </div>
+
+        <div class="row mr-0">
+            <div class="col-sm-6">
+                <h2 class="m-5 bord shadow-lg"><i class="far fa-thumbs-up bg p-4 mr-4"></i>Productos de Calidad</h2>
+            </div>
+            <div class="col-sm-6 ">
+                <h2 class="m-5 bord shadow-lg"><i class="fas fa-stopwatch bg p-4 mr-4"></i>Entrega a Tiempo</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Aqui terminan los iconos -->
+    <!-- Página de pagos -->
+    <form class="form">
+        <div class="row bord p-4 shadow-lg m-5">
+            <div class="col-sm-6">
+                <div class="col-sm-6 mt-2 row">
+                    <h5 class="my-auto"> Nombre :</h5>
+                    <input class="ml-3 name input" type="text" placeholder="Nombre" required />
+                <p class="error"></p>
+                </div>
+                <div class="col-sm-6 mt-2 row ">
+                    <h5 class="my-auto">Correo Electrónico :</h5>
+                    <input class="ml-3 input" type="email" placeholder="Email" required />
+                </div>
+                <div class="col-sm-6 mt-3 row ">
+                    <h5 class="my-auto">Dirección :</h5>
+                    <input class="ml-3 input" type="text" placeholder="Dirección" required />
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="col-sm-6 mt-2 row">
+                    <h5 class="my-auto name my-auto">Apellido :</h5>
+                    <input class="ml-3 input" type="text" placeholder="Apellido" required />
+                </div>
+                <div class="col-sm-6 mt-2 row">
+                    <h5 class="my-auto my-auto">Contraseña :</h5>
+                    <input class="ml-3 input caps" title="(4-8 characters)" type="password" minlength="4" maxlength="8"
+                        placeholder="Contraseña" required />
+                    <p id="text">Bloqueo de Mayúsculas  Activado!</p>
+                </div>
+                <div class="col-sm-6 mt-3 row">
+                    <h5 class="my-auto my-auto">Número de Teléfono :</h5>
+                    <input class="ml-3 validation input" type="number" placeholder="No. Teléfono" required />
+                    <p class="text">Número de Teléfono Invalido!!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pagina de Pagos culminada Aquí-->
+        <!-- Botón de Pagar -->
+        <div class="m-5 final text-center">
+            <button type="submit" id="btn" class="p-2 px-4 btn shadow-lg" onclick="validar()"><i class="fas fa-cart-arrow-down p-2"></i>Pagar</button>
+        </div>
+    </form>
+    <!-- Botón de Pagar -->
+    
+    <!--  FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Derechos Reservados|Junior lópez &copy 2021</p>
+        <p class="text-center m-0 text-muted">Tienda de Ropas</p>
+
+    </footer>
+    <!--  FOOTER -->
+    <!-- Etiquetas de scripts-->
+    <script src="pagar.js"></script>
+
+</body>
+
+</html>

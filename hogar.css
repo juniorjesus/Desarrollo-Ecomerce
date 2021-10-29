@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    background-color: rgb(154, 167, 162);
+    font-family: Poppins;
+    text-align: center;
+}
+/* navbar */
+.navbar{
+    background-color: black !important;
+}
+.nav-link{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link:active{
+  color:  rgb(154, 167, 162);
+}
+.card-img-top{
+    height: 250px;
+    width: 100%;
+}
+.btn{
+    background-color: black;
+    color: rgb(154, 167, 162);
+}
+.btn:hover{
+    background-color: black;
+    color: rgb(224, 216, 213);
+}
+.btn:active {
+    position: relative;
+    top: 1.5px;
+  }
+.price{
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+}

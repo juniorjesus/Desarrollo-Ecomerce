@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fuentes -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="hogar.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CaprichoStyle</title>
+</head>
+
+<body>
+  <!-- Comenzamos con nuestro NavBar -->
+  <nav class="navbar navbar-expand-md bg-secondary sticky-top">
+    <a class="navbar-brand text-white" href="index.html"><span><i class="fas fa-shopping-cart mr-2"></i></span>
+      <span>CaprichoStyle</span> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#sport">Sport <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#zapatos"> Zapatos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#ropa"> Ropa</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#accesorio"> Accesorios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white btn" id="carrito" type="button" data-toggle="modal"
+            data-target="#exampleModalScrollable" onclick="cart()" href="#accesorio"><i class="fas fa-cart-arrow-down"></i>
+            Mi Carrito</a>
+        </li>
+  </nav>
+  <!-- Aquí Termina el NavBar -->
+  <h1 class="text-center mt-3 m-5">Bienvenidos a su CaprichoStyle</h1>
+  <!-- Página de Productos-->
+  <!-- Comenzamos la Sección de Sport -->
+  <h2 class="text-center"><i class="fas fa-shopping-basket mr-2"></i>Sport</h2>
+  <div id="sport" class="row ml-3 m-5">
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/g.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title co text-center">Short Sport</h5>
+        <p class="card-text cop text-center display-3">$10.5</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(1)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/g1.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title pas text-center">Jogger</h5>
+        <p class="card-text pasp text-center display-3">$6.25</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(2)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/g6.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title icm text-center">Chaqueta Cortavientos</h5>
+        <p class="card-text icmp display-3 text-center">$5</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(3)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- Sección de Sport Terminada -->
+  <!-- Sección de Accesorios -->
+  <h2 class="text-center"><i class="fas fa-heart mr-2"></i>Accesorios</h2>
+  <div id="accesorio" class="row ml-3 m-5">
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/b.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title a1 text-center">Billetera Membense </h5>
+        <p class="card-text a1p text-center display-3">$260</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(4)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/b2.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title zm text-center">kit de Maquillaje Zero</h5>
+        <p class="card-text zmp text-center display-3">$20.5</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(5)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/b3.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title lt text-center">Colonia Viajera Masculina</h5>
+        <p class="card-text ltp text-center display-3">$12.75</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(6)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+  </div>
+  <!-- Sección de Accesorios Terminada -->
+
+  <!-- Seccion de Ropas -->
+  <h2 class="text-center"><i class="fas fa-tshirt mr-2"></i>Ropa</h2>
+  <div id="ropa" class="row ml-3 m-5">
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/c1.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title ld text-center">Vestido Vintage</h5>
+        <p class="card-text ldp text-center display-3">$15</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(7)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/c2.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title lc text-center">Buzo Puma</h5>
+        <p class="card-text text-center lcp display-3">$15 </p>
+        <div class="text-center"><a class="btn" tabindex="0" onclick="agregarCarro(8)">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">A
+      <img src="./images/c3.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title tf text-center">Chaqueta de Jean Clásica</h5>
+        <p class="card-text text-center tfp display-3">$10.5</p>
+        <div class="text-center"> <a tabindex="0" onclick="agregarCarro(9)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Ropas terminadas -->
+
+  <!-- Sección de Zapatos -->
+  <h2 class="text-center"><i class="fas fa-shoe-prints mr-2"></i> Zapatos</h2>
+  <div id="zapatos" class="row ml-3 m-5">
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/s.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title ms text-center">Driver en Cuero</h5>
+        <p class="card-text msp text-center display-3">$25</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(10)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/s1.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title br text-center">Tacones Rojo Pasión</h5>
+        <p class="card-text brp text-center display-3">$20.5</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(11)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+
+    <div class="card col-sm-3 m-1 ml-5" style="width: 18rem;">
+      <img src="./images/s2.jpg" class="card-img-top img-responsive">
+      <div class="card-body">
+        <h5 class="card-title rg text-center">Tenis Casuales hombres</h5>
+        <p class="card-text rgp text-center display-3">$13.45</p>
+        <div class="text-center"><a tabindex="0" onclick="agregarCarro(12)" class="btn">Agregar al Carro</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Zapatos terminada-->
+  <!-- Página de Productos Terminada -->
+
+  <!-- Ventana Modal -->
+  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalScrollableTitle"><i class="fas fa-cart-arrow-down"></i>Mi Carrito</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Lista de Elementos Seleccionados -->
+          <div>
+            <ul class="list">
+
+            </ul>
+            <div>
+              <h3 class="bill px-5">Tu Carrito de Compras está Vacio!</h3>
+            </div>
+            <div>
+              <a href="pagar.html" class="btn checkout m-3">Comprar</a>
+            </div>
+          </div>
+          <!-- lista de Elementos Terminada-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Ventana Modal terminada -->
+  <!-- <button id="cart"  type="button" class="btn m-5" data-toggle="modal" data-target="#exampleModalScrollable" onclick="cart()">My Cart</button>
+  -->
+
+
+    <!--  FOOTER -->
+    <footer class="bg-dark p-3 mt-5">
+      <p class="text-center m-0 text-muted">Derechos Reservados|Junior lópez &copy 2021</p>
+      <p class="text-center m-0 text-muted">Tienda de Ropas</p>
+  </footer>
+  <!--  FOOTER -->
+
+  <!-- Etiquetas script  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

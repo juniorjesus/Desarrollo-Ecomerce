@@ -6,4 +6,4 @@ es una sencilla aplicacion en JavaScript  para poner en practicas mis habilidade
 
 
  ---
-⌨️ con ❤️ por [Jrjesus18](https://github.com/juniorjesus) 😊
+⌨️ hecho con ❤️ por [Jrjesus18](https://github.com/juniorjesus) 😊
